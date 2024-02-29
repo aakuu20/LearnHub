@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Classroom Admin Panel</title>
+<style>
+    /* Basic styling for demonstration purposes */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Google Classroom Admin Panel</h1>
+    </header>
+    <div class="container">
+        <h2>User Management</h2>
+        <button id="addUserBtn">Add User</button>
+        <button id="deleteUserBtn">Delete User</button>
+
+        <h2>Class Management</h2>
+        <button id="createClassBtn">Create Class</button>
+        <button id="deleteClassBtn">Delete Class</button>
+
+        <!-- Additional features/buttons can be added here -->
+
+    </div>
+
+    <!-- JavaScript to handle button clicks -->
+    <script>
+        document.getElementById("addUserBtn").addEventListener("click", function() {
+            alert("Add User functionality goes here");
+        });
+
+        document.getElementById("deleteUserBtn").addEventListener("click", function() {
+            alert("Delete User functionality goes here");
+        });
+
+        document.getElementById("createClassBtn").addEventListener("click", function() {
+            alert("Create Class functionality goes here");
+        });
+
+        document.getElementById("deleteClassBtn").addEventListener("click", function() {
+            alert("Delete Class functionality goes here");
+        });
+    </script>
+</body>
+</html>

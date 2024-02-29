@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Assignment</title>
+    <link rel="stylesheet" href="createassignment.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap" rel="stylesheet" />
+</head>
+<body class="body flex flex-col" id="body">
+    <header class="header flex items-center" id="header">
+        <div class="close-icon flex" id="close-icon">
+        </div>
+        <div class="header-icon flex" id="header-icon">
+            <img class="assignment-icon" id="assignment-icon" src="images/assignment.svg" alt="assignment icon">
+        </div>
+        <div class="header-title flex items-start" id="header-title">Assignment</div>
+        <div class="assign-button-container flex justify-end padding-md" id="assign-button-container">
+            <label for="assign-button" class="assign-button-label" id="assign-button-label">Assign</label>
+            <button class="assign-button" id="assign-button"></button>
+        </div>
+    </header>
+
+    <main class="main-container flex" id="main-container">
+        <div class="left-container flex flex-col padding-lg gap-20" id="left-container">
+            <div class="validation-message error" id="validation-message"></div>
+            <div class="assignment-container flex flex-col padding-lg gap-10" id="assignment-container">
+                <div class="assignment-title-container flex" id="assignment-title-container">
+                    <input type="text" class="assignment-title" id="assignment-title" name="assignment-title" placeholder="Title" required>
+                </div>
+                <div class="assignment-details-container flex" id="assignment-details-container">
+                    <input class="assignment-details" id="details" name="details" placeholder="Instructions (optional)"></input>
+                </div>
+            </div>
+            <div class="attachments-container flex flex-col gap-10" id="attachments-container">
+                <div class="attachments-title padding-lg" id="attachments-title">
+                    Attach
+                </div>
+                <div class="attachments-file-container flex padding-md" id="attachments-file-container">
+                    <label for="attachments-file" class="file-upload-btn" id="file-upload-btn">Upload Files</label>
+                    <input type="file" class="attachments-file" id="attachments-file" name="attachments-file" multiple>
+                    <span class="attachments-file-optional">(optional)</span>
+                </div>
+                <a href="https://docs.google.com/document/d/1UZWNlJk2EDhKomF9cngnYKMavKd_nKIw57w1SNFN0Fc/edit" target="_blank">Docs</a>
+                <a href="https://docs.google.com/spreadsheets/d/10x623cBr2wwEeWntwnvkc29aNw6ZGM4t-Y-0PIQgg-o/edit#gid=0" target="_blank">Sheets</a>
+                <a href=" https://docs.google.com/presentation/d/1Ntxz6FTCtaL7leGnVWyuNWpr7h4FHiOpl1b0W6CcMc0/edit#slide=id.p" target="_blank">Slides</a>
+                <a href="https://docs.google.com/forms/d/1ZIGiStajsytvjN_nZKEgNuWgwijV0Dz1Dg_-pJR4XZM/edit" target="_blank">Forms</a>
+                <a href="https://docs.google.com/forms/d/1MVsKGuSRqjHESV-ES3I0QDSSsbM6ZPHfcEw3dQIgZc4/edit" target="_blank">Forms</a>
+            </div>
+        </div>
+        <div class="right-container flex flex-col padding-lg gap-20" id="right-container">
+            <div class="class-assign flex flex-col gap-10" id="class-assign">
+                <label for="class-assign-select">For</label>
+                <select class="class-assign-select padding-lg" id="class-assign-select" name="class-assign-select" required>
+                <option class="class-assign-id" id="class-assign-id" value="class1">fsw</option>
+                </select>
+            </div>
+            <div class="due-date-container flex flex-col gap-10" id="due-date-container">
+                <label for="due-date">Due</label>
+                <input type="date" class="due-date padding-lg" id="due-date" name="due-date" required>
+            </div>
+        </div>
+    </main>
+    <script src="createassignment.js"></script>
+
+</body>
+</html>
+    

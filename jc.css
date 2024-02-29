@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-image: url("images/jc.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  border-radius: 5px;
+  }
+  
+  label {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 10px;
+    background-color: #1628c9;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0a57e4;
+  }
